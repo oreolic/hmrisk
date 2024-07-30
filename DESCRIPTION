@@ -1,0 +1,13 @@
+Package: hmrisk
+Type: Package
+Title: HM Risk Score Package
+Version: 0.1.0
+Author: Your Name <your.email@example.com>
+Maintainer: Your Name <your.email@example.com>
+Description: A package for calculating HM risk scores using GSEA and GSVA analyses.
+License: MIT + file LICENSE
+Imports:
+    GSEABase,
+    GSVA
+RoxygenNote: 7.2.3
+
