@@ -13,6 +13,7 @@ library(hmrisk)
 
 #load gene expression data
 exp <- read.table("path/to/your/expression_data.txt", header = TRUE, sep = "\t", row.names = 1)
+
 #calculate hematogenous metastasis risk score
 result <- hmscore(exp)
 
