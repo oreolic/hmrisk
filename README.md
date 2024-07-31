@@ -17,6 +17,13 @@ exp <- read.table("path/to/your/expression_data.txt", header = TRUE, sep = "\t",
 #calculate hematogenous metastasis risk score
 result <- hmscore(exp)
 
+#View the ssGSEA scores
+print(result$scores)
+
+#View the risk categories
+print(result$risk_categories)
+
+
 # Example Data Format
 The gene expression matrix (exp) should be in the following format:
 
