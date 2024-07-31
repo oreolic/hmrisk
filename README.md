@@ -1,12 +1,13 @@
-R package for calculation of hematogenous metastasis risk score from gene expression matrix
-users can use both normalized microarray data and normalized bulk-level RNAseq TPM expression matrix.
+# Introduction
+
+R package for calculation of hematogenous metastasis risk score and classify risk group from gene expression matrix users can use both normalized microarray data and normalized bulk-level RNAseq TPM expression matrix.
 
 
-# installation
+# Installation
 devtools::install_github("oreolic/hmrisk")
 
 
-# usage
+# Usage
 
 #package load
 library(hmrisk)
