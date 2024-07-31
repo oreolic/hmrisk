@@ -33,5 +33,11 @@ hmscore <- function(exp) {
   # Calculate HM risk score
   result["HM_Risk_Score", ] <- result["Stemness_Score", ] - result["Gastric_Score", ]
   
-  return(result)
+    # Categorize risk
+  risk_categories <- ifelse(res.gsva["HM_Risk_Score", ] > 0.15, "high risk", "low risk")
+  
+  return(list(
+    scores = res.gsva,
+    risk_categories = risk_categories
+  ))
 }
